@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.regex.*;
 
 public class Calculator {
     public static void main(String[] args) {
@@ -8,8 +9,15 @@ public class Calculator {
         // Enter a string
         // e.g 123.5+10/16*45-35
         Scanner calculation = new Scanner(System.in);
-        System.out.println("Please enter your four function calculation, this will go in the order of operations that you input.");
+        System.out.println("Please enter your four function equation, this will go in the order of operations that you input.");
         String userCalculation = calculation.nextLine();
+
+        if(userCalculation.matches(".*[ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&()<>?_=|':;~`abcdefghijklmnopqrstuvwxyz,].*"))
+        {
+            System.out.println("Please enter a valid equation. Valid characters are [0-9], [.], and [+-/*]");
+            return;
+        }
+
         System.out.println(userCalculation);
 
         // in a loop search string for first operator
@@ -62,6 +70,7 @@ public class Calculator {
             else{
                 System.out.println(operators);
                 System.out.println(nums);
+
             }
         }
         nums.add(finalNum);
