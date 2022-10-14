@@ -13,6 +13,7 @@ public class Calculator {
         String userCalculation = calculation.nextLine();
 
         //detects disallowed characters and ends program
+        userCalculation = userCalculation.replaceAll("\\s","");
         if(userCalculation.matches(".*[ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&()<>?_=|':;~`abcdefghijklmnopqrstuvwxyz,].*"))
         {
             System.out.println("Please enter a valid equation. Valid characters are [0-9], [.], and [+-/*]");
