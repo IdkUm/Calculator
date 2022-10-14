@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cef9e8d-c0a2-43d2-8245-e068c12e917e" name="Changes" comment="Core function commit">
+    <list default="true" id="5cef9e8d-c0a2-43d2-8245-e068c12e917e" name="Changes" comment="new branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
     </list>
@@ -20,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="basefunctions" />
+        <entry key="$PROJECT_DIR$" value="10-13-22" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +63,7 @@
       <workItem from="1664912531256" duration="3222000" />
       <workItem from="1665516046697" duration="4844000" />
       <workItem from="1665629816605" duration="8005000" />
-      <workItem from="1665683759277" duration="3199000" />
+      <workItem from="1665683759277" duration="21596000" />
     </task>
     <task id="LOCAL-00001" summary="Core function commit">
       <created>1665632039144</created>
@@ -72,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665632039144</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new branch">
+      <created>1665709722158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665709722158</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Core function commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Core function commit" />
+    <MESSAGE value="new branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="new branch" />
   </component>
 </project>
