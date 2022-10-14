@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cef9e8d-c0a2-43d2-8245-e068c12e917e" name="Changes" comment="new branch">
+    <list default="true" id="5cef9e8d-c0a2-43d2-8245-e068c12e917e" name="Changes" comment="final final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
     </list>
@@ -65,7 +65,7 @@
       <workItem from="1665629816605" duration="8005000" />
       <workItem from="1665683759277" duration="21932000" />
       <workItem from="1665734172875" duration="4000" />
-      <workItem from="1665734554621" duration="2324000" />
+      <workItem from="1665734554621" duration="5252000" />
     </task>
     <task id="LOCAL-00001" summary="Core function commit">
       <created>1665632039144</created>
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665733802793</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final final">
+      <created>1665736997905</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665736997905</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Core function commit" />
     <MESSAGE value="new branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="new branch" />
+    <MESSAGE value="final final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final final" />
   </component>
 </project>

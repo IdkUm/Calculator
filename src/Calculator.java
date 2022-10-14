@@ -6,25 +6,25 @@ public class Calculator {
     public static void main(String[] args) {
 
         //ask user for the calculation
-        // Enter a string
-        // e.g 123.5+10/16*45-35
+        //Enter a string
+        //e.g 123.5+10/16*45-35
         Scanner calculation = new Scanner(System.in);
         System.out.println("Please enter your four function equation, this will go in the order of operations that you input.");
         String userCalculation = calculation.nextLine();
 
+        //detects disallowed characters and ends program
         if(userCalculation.matches(".*[ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&()<>?_=|':;~`abcdefghijklmnopqrstuvwxyz,].*"))
         {
             System.out.println("Please enter a valid equation. Valid characters are [0-9], [.], and [+-/*]");
             return;
         }
 
-        System.out.println(userCalculation);
-
-        // in a loop search string for first operator
+        // in a loop search string for first operators
         int length = userCalculation.length();
         ArrayList<String> operators = new ArrayList<String>();
         ArrayList<String> nums = new ArrayList<String>();
 
+        //Variables for later
         char charPlus = ('+');
         char charMinus = ('-');
         char charMulti = ('*');
@@ -32,16 +32,17 @@ public class Calculator {
         String finalNum = "";
         int n = 0;
 
-//  i i++  length of string
-// search for first operator
-// substring of string form 0 to operator
-// store in array
-// store operator in second array
-// redefine substring as starting from character after operator
-// loop until no operators exist
-// store last value in array of numbers
+        //for loop i = 0 i < length of string i++
+        //search for first operator
+        //substring of string form 0 to operator
+        //store in array
+        //store operator in second array
+        //redefine substring as starting from character after operator
+        //loop until no operators exist
+        //store last value in array of numbers
         for (int i = 0; i < length; i++) {
-            char character = userCalculation.charAt(i);
+            char character = userCalculation.charAt(i);  //set character to a character in userCalculation
+            //add operator in to array and the muber in to the array
             if(Character.compare(character, charPlus) == 0) {
                 operators.add("+");
                 nums.add(userCalculation.substring(n, i));
@@ -68,14 +69,9 @@ public class Calculator {
 
             }
             else{
-                System.out.println(operators);
-                System.out.println(nums);
-
             }
         }
         nums.add(finalNum);
-        System.out.println(operators);
-        System.out.println(nums);
 
         // run through array values applying the correct operator
         double currentNum = Double.parseDouble(nums.get(0));
@@ -86,29 +82,21 @@ public class Calculator {
 
             if(Character.compare(operatorChar, charPlus) == 0) {
                 currentNum = (currentNum+mynum2);
-                System.out.println(currentNum);
             }
             else if(Character.compare(operatorChar, charMinus) == 0) {
                 currentNum = (currentNum - mynum2);
-                System.out.println(currentNum);
             }
             else if(Character.compare(operatorChar, charMulti) == 0) {
                 currentNum = (currentNum * mynum2);
-                System.out.println(currentNum);
             }
             else if(Character.compare(operatorChar, charDiv) == 0) {
                 currentNum = (currentNum / mynum2);
-                System.out.println(currentNum);
             }
         }
+        System.out.println(currentNum);
         }
     }
 // e.g 123.5+10/16*45-35
-
-
-
-
-
 
 
 
